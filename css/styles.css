@@ -107,6 +107,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -128,9 +129,6 @@ img {
 }
 
 .contacts .link {
-  /*display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;*/
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
@@ -138,6 +136,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon {
@@ -145,6 +144,7 @@ img {
   height: 11.2px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
@@ -152,6 +152,7 @@ img {
   height: 14.94px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .link:hover .envelope-icon,
@@ -319,7 +320,7 @@ img {
   margin-bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  width: 370px; /*не получается задать через кальк*/
+  width: 100%;
 
   color: var(--primary-white-color);
   font-size: 14px;
@@ -390,6 +391,7 @@ img {
 
 .worker-info .socials.link {
   fill: var(--team-socials-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .worker-info .socials.link:hover,
@@ -410,6 +412,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--clients-logo-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .clients.link:hover,
@@ -484,6 +488,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials.link:hover,
@@ -554,7 +559,6 @@ img {
   padding-left: 22px;
   padding-right: 22px;
   border: transparent;
-  background: #f5f4fa;
   border-radius: 4px;
 
   font-weight: 500;
@@ -564,6 +568,8 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--primary-title-color);
+  background-color: #f5f4fa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio .filter-button:hover,
